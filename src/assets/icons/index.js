@@ -12,3 +12,6 @@ export { default as Search } from "./search";
 export { default as Sales } from "./sales";
 export { default as Products } from "./products";
 export { default as Inventory } from "./inventory";
+export { default as LocationPointer } from "./location-pointer";
+export { default as BedRooms } from "./bed-rooms";
+export { default as Villa } from "./villa";

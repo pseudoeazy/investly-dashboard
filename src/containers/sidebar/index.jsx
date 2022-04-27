@@ -6,7 +6,7 @@ import louisePic from "assets/images/louise.png";
 
 function Sidebar() {
   return (
-    <aside className="relative w-60  border-r">
+    <aside className="relative z-10 w-60 border-r ">
       <div id="sidebar" className="static z-40 left-auto top-auto">
         {/* Sidebar header */}
         <div className="pt-6 px-[3.71875rem] text-center ">

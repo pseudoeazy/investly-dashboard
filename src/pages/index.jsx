@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "containers/layout";
 import Header from "containers/layout/header";
 import Summary from "containers/summary";
+import Listing from "containers/listing";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       </Head>
       <Header />
       <Summary />
+      <Listing />
     </Layout>
   );
 }

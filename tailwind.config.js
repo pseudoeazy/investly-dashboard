@@ -21,6 +21,8 @@ module.exports = {
           100: "#373F47",
           200: "#242D35",
         },
+        link: "#0C1116",
+        placeholder: "#D6DADE",
       },
     },
   },

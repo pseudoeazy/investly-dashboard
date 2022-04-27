@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import styled from "styled-components";
 import withHover from "components/hocs/with-hover";
 import navMenu from "constants/nav-menu";
 
@@ -10,12 +11,18 @@ const classes = {
   transition duration-200 ease-in-out`,
 };
 
+const Nav = styled.nav`
+  & li:nth-child(8) {
+    margin-top: 21.125rem !important;
+  }
+`;
+
 const Navbar = () => {
   const router = useRouter();
   const pageUrl = router.pathname;
 
   return (
-    <nav>
+    <Nav>
       <ul className="flex flex-col space-y-2 snap-y">
         {navMenu.map(({ icon: Icon, path, ...rest }, idx) => {
           const IconComponent = withHover(Icon);
@@ -31,7 +38,7 @@ const Navbar = () => {
           );
         })}
       </ul>
-    </nav>
+    </Nav>
   );
 };
 
